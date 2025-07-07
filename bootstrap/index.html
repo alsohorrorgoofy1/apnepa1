@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS (use CDN or make sure local path exists) -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+  <!-- Custom styles -->
+  <style>
+    .carousel-inner img {
+      max-height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body class="container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm rounded px-3 py-2 mb-3">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-warning" href="#">Adarsha Saula</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Pay</a>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 rounded-pill" type="search" placeholder="Search">
+          <button class="btn btn-warning rounded-pill" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ashok Pandit</h5>
+          <p>Very good man</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- end of slider-->
+
+
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col">
+			<div class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/800/400?random=3" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+		</div>
+			<div class="col">
+			<div class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/800/400?random=3" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+		</div>
+			<div class="col">
+			<div class="card" style="width: 18rem;">
+  <img src="https://picsum.photos/800/400?random=3" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+		</div>
+	</div>
+</div>
+
+<!-- end of card -->
+
+<div class="container">
+	<div class="container mt-3">
+		<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ashok</td>
+      <td>Pandit</td>
+      <td>CR7</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Bhagya</td>
+      <td>NM</td>
+      <td>LM10</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+</div>
+
+
+
+
+
+
+
+  <!-- Grid of cards/text -->
+  <div class="row mt-4">
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-primary text-white p-3">Content Block 1</div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-primary text-white p-3">Content Block 2</div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-secondary text-white p-3">Content Block 3</div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-secondary text-white p-3">Content Block 4</div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-secondary text-white p-3">Content Block 5</div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-4 col-12 mt-3">
+      <div class="bg-info text-white p-3">Content Block 6</div>
+    </div>
+  </div>
+
+  <!-- Footer-style sections -->
+  <div class="container-fluid bg-primary text-white mt-4 p-3">
+    Footer Section 1 - general information.
+  </div>
+  <div class="container bg-primary text-white mt-3 p-3">
+    Footer Section 2 - contact or disclaimer.
+  </div>
+
+  <!-- Bottom row of boxes -->
+  <div class="row mt-3 p-2">
+    <div class="col bg-primary text-white p-3">Column 1 content.</div>
+    <div class="col bg-secondary text-white p-3">Column 2 content.</div>
+    <div class="col bg-info text-white p-3">Column 3 content.</div>
+  </div>
+
+  <!-- Bootstrap JS (use local or CDN) -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
